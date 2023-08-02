@@ -13,4 +13,21 @@ const divide = function(a, b){
     return a / b
 }
 
-console.log(divide(0,1))
+const firstNumber = ''
+const secondNumber = ''
+const operator = ''
+
+function operate (operator, firstNumber, secondNumber){
+    const functions = {
+        "+": add,
+        "-": subtract,
+        "*": multiply,
+        "/": divide,
+    }
+    if (!functions.hasOwnProperty(operator)){
+        return NaN
+    }
+    return functions[operator](firstNumber,secondNumber)
+}
+
+let displayValue = "";
