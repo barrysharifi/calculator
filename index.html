@@ -5,58 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script src ="script.js"></script>
-    <link rel = "stylesheet" type = "text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
 </head>
 <body>
-    <h1 class="title">CALCULATOR</h1>
-    <div class="calc-container">
-        <div id="display">
-            <div class="previous-operand"></div>
-            <div class="current-operand"></div>
-        </div>
-        <div class="button-container">
-            <div class="divide-container">
-                <button class="divide">÷</button>
-            </div>
-            <div class="multiply-container">
-                <button class="multiply">x</button>
-            </div>
-            <div class="row-1-container">
-                <div class="nums-1">
-                    <button id="seven">7</button>
-                    <button id="eight">8</button>
-                    <button id="nine">9</button>
-                </div>
-                <button class="subtract">-</button>
-            </div>
-            <div class="row-2-container">
-                <div class="nums-2">
-                    <button id="four">4</button>
-                    <button id="five">5</button>
-                    <button id="six">6</button>
-                </div>
-                <button class="add">+</button>
-            </div>
-                <div class="double-row-container">
-                    <div class="nums-3/4">
-                        <div class="nums-container">
-                            <button id="one">1</button>
-                            <button id="two">2</button>
-                            <button id="three">3</button>
-                        </div>
-                        <div class="clear-container">
-                            <button class="clear">AC</button>
-                            <button class="zero">0</button>
-                            <button class="decimal">.</button>
-                        </div>
-                    </div>
-                    <button class="equals">=</button>
-                </div>
-            </div>
+    <div class ="calculator">
+        <form>
+            <input type= "text" class="screen">
+        </form>
+        <div class="buttons">
+            <button type="button" class="btn btn-yellow" data-num="*">x</button>
+            <button type="button" class="btn btn-yellow" data-num="/">÷</button>
+            <button type="button" class="btn btn-yellow" data-num="-">-</button>
+            <button type="button" class="btn btn-yellow" data-num="+">+</button>
+
+            <button type="button" class="btn btn-grey" data-num="9">9</button>
+            <button type="button" class="btn btn-grey" data-num="8">8</button>
+            <button type="button" class="btn btn-grey" data-num="7">7</button>
+            <button type="button" class="btn btn-grey" data-num="6">6</button>
+            <button type="button" class="btn btn-grey" data-num="5">5</button>
+            <button type="button" class="btn btn-grey" data-num="4">4</button>
+            <button type="button" class="btn btn-grey" data-num="3">3</button>
+            <button type="button" class="btn btn-grey" data-num="2">2</button>
+            <button type="button" class="btn btn-grey" data-num="1">1</button>
+            <button type="button" class="btn btn-grey" data-num="0">0</button>
+            <button type="button" class="btn btn-grey" data-num=".">.</button>
+
+            <button type="button" class="btn-equal">=</button>
+            <button type="button" class="btn-clear">AC</button>
         </div>
     </div>
-
-    
+<script src ="script.js"></script>
 </body>
 </html>

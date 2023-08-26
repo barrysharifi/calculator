@@ -1,83 +1,48 @@
-*,*::before, *::after{
+*{
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: normal;
+}
+.calculator{
+    width: 300px; 
+    height: 500px;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 12px;
+    background-color: pink;
+    overflow: hidden;
 }
 body{
-    padding: 0;
-    margin: 0;
-    background-color: blanchedalmond;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 100vh;
 }
-#display{
-    background-color:lightgray;
-    height: 50px;
-    width: 180px;
-    margin-top: 10px;
-}
-.calc-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: pink;
-    border-style: solid;
-    border-color: palevioletred;
-    height: 280px;
-}.divide-container{
-    display: flex;
-    justify-content: end;
-}
-.multiply-container{
-    display: flex;
-    justify-content: end;
-}
-.button-container{
-    width: 200px;
-    height: 300px;
-    padding-top: 10px
-}
-.divide{
-    height:30px;
-    width: 43px;
-}
-.multiply{
-    height:30px;
-    width:43px;
-}
-.row-1-container{
-    display: flex;
-    justify-content: space-between;
-}
-.nums-1{
-    display: flex;
-    justify-content: space-between;
+form input{
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 12px;
+    font-size: 2rem;
+    padding: 1rem;
+    color: white;
+    background-color:palevioletred;
+    text-align: right;
+    pointer-events: none;
 }
 button{
-    height:30px;
-    width:43px;
+    flex: 0 0 22%;
+    margin: 5px 0;
+    border: 1px solid palevioletred;
+    width: 60px;
+    height: 52px;
+    font-size: 22px;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
 }
-.row-2-container{
+.buttons{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-}
-.nums-2{
-    display: flex;
-    justify-content: space-between;
-}
-.nums-container{
-    display: flex;
-}
-.double-row-container{
-    display: flex;
-    justify-content: space-between;
-}
-.clear-container{
-    display: flex;
-}
-.equals{
-    height: 60px;
+    padding: 20px;
 }
